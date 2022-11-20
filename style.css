@@ -1,0 +1,82 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: hsl(212, 45%, 89%);
+}
+
+.qr-component {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.qr-wrapper {
+	height: 497px;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 20px;
+	background-color: hsl(0, 0%, 100%);
+	margin: 0;
+	padding: 0;
+}
+
+.qr-img {
+	height: 288px;
+	width: 288px;
+	border-radius: 10px;
+	margin-top: -10px;
+}
+
+.qr-text-wrapper {
+	height: 125px;
+	width: 288px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.qr-header-wrapper {
+	height: 48px;
+	width: 288px;
+	margin-bottom: 15px;
+}
+
+.qr-header {
+	text-align: center;
+	margin: 0;
+	line-height: 28px;
+	font-family: "Outfit", sans-serif;
+	font-weight: 700;
+	font-size: 1.375rem;
+	color: hsl(218, 44%, 22%);
+	margin-bottom: 15px;
+}
+
+.qr-bodytxt-container {
+	width: 256px;
+	text-align: center;
+	margin: 0;
+	line-height: 19px;
+	font-family: "Outfit", sans-serif;
+	font-weight: 400;
+	font-size: 0.9375rem;
+	color: hsl(220, 15%, 55%);
+}
+
+/* For devices with width of 480px and less */
+@media only screen and (max-width: 480px) {
+	body {
+		height: 667px;
+		width: 375px;
+	}
+}
